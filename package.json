@@ -8,7 +8,7 @@
     "open:src": "babel-node tools/srcServer.js",
     "lint": "node_modules/.bin/esw webpack.config.* src tools",
     "lint:watch": "npm run lint -- --watch",
-    "test": "mocha --reporter progress tools/testSetup.js \"src/**/*.test.js\"",
+    "test": "nyc mocha --reporter progress tools/testSetup.js \"src/**/*.test.js\"",
     "test:watch": "npm run test -- --watch"
   },
   "author": "Cory House",
@@ -53,6 +53,7 @@
     "mocha": "2.4.5",
     "nock": "8.0.0",
     "npm-run-all": "1.8.0",
+    "nyc": "^7.1.0",
     "open": "0.0.5",
     "react-addons-test-utils": "15.0.2",
     "redux-immutable-state-invariant": "1.2.3",

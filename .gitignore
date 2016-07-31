@@ -34,3 +34,6 @@ dist
 
 # Mac files
 .DS_Store
+
+# NYC code coverage
+.nyc_output
